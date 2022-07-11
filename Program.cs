@@ -77,7 +77,12 @@ namespace Checks
                 total = total * 0.75;
             }
 
-
+             if (fishAmount % 2 == 0 && season != "Autumn")
+            {
+                total = total * 0.95;
+            }
+            
+           
             if (budget >= total)
             {
                 rest = budget - total;
